@@ -449,6 +449,10 @@ nav .links ul li:not(:last-child) a {
     .about .about-content .info p:last-of-type {
         font-size: .8rem;
     }
+    .about .about-content .about-img::after,
+    .about .about-content .about-img::before {
+        display: none;
+    }
 }
 
 /* ============= End About Section ================ */
