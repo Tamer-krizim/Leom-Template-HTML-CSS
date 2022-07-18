@@ -376,7 +376,7 @@ nav .links ul li:not(:last-child) a {
 
 .about .about-content .about-img {
     position: relative;
-    width: 390px;
+    width: 395px;
     height: 479px;
 }
 
@@ -434,6 +434,11 @@ nav .links ul li:not(:last-child) a {
 }
 
 @media (max-width: 991px) {
+    .about .about-content .about-img::after,
+    .about .about-content .about-img::before {
+        display: none;
+    }
+
     .about .about-content {
         flex-direction: column;
         text-align: center;
@@ -441,6 +446,8 @@ nav .links ul li:not(:last-child) a {
 
     .about .about-content .about-img {
         margin: 0 auto 60px;
+        width: 359px;
+        height: 479px;
     }
 
     .about .about-content .info p:first-of-type {
@@ -448,10 +455,6 @@ nav .links ul li:not(:last-child) a {
     }
     .about .about-content .info p:last-of-type {
         font-size: .8rem;
-    }
-    .about .about-content .about-img::after,
-    .about .about-content .about-img::before {
-        display: none;
     }
 }
 
