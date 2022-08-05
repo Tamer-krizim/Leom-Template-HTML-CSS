@@ -102,16 +102,22 @@ nav .container {
     justify-content: space-between;
     align-items: center;
 }
+
 nav a .logo {
     width: 60px;
 }
 
 nav .links {
+    width: 20px;
+    height: 20px;
+    align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
-nav .links:hover .burger span:nth-child(2) {
+nav .links.active .burger span:nth-child(2) {
     width: 100%;
+    transition: .3s all ease;
 }
 nav .links .burger {
     display: flex;
@@ -151,11 +157,11 @@ nav .links ul {
     min-width: 200px;
     top: calc(100% + 25px);
     display: none;
-    transition: .3s;
+    transition: .3s all;
     z-index: 999;
 }
 
-nav .links:hover ul {
+nav .links.active ul {
     display: block;
 }
 
